@@ -1,0 +1,135 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    background-color: #ffe4e1; /* Light Pink Background */
+    font-size: 16px;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header Styles */
+header {
+    background-color: #4d0000; /* Dark Maroon */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header nav .logo {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+header nav .nav-links {
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+header nav .nav-links li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav .nav-links li a {
+    color: white;
+    font-weight: 600;
+}
+
+/* Section Titles */
+h1 {
+    font-weight: bold;
+    font-size: 30px;
+    color: #4d0000; /* Dark Maroon */
+}
+
+/* Service Section Styles */
+.services-gallery {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.service-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.image-card {
+    width: 45%; /* Ensures two images per row */
+    margin-bottom: 30px; /* Increased margin for more space between description and image */
+    text-align: center;
+    margin-top: 20px; /* Added space on top of images */
+}
+
+.image-card img {
+    width: 100%; /* Makes the images responsive */
+    height: auto;
+    max-width: 300px;
+}
+
+.image-card p {
+    margin-top: 20px; /* Increased margin to create space */
+    font-weight: bold;
+    color: #4d0000; /* Dark Maroon */
+}
+
+/* "Get in Touch" Button Styles */
+#get-in-touch {
+    display: block;
+    width: 400px; /* Increased width */
+    height: 80px; /* Increased height */
+    margin: 50px auto 0; /* Increased margin to give space around the button */
+    background-color: #4d0000; /* Dark Maroon */
+    color: white;
+    text-align: center;
+    line-height: 80px; /* Centered text vertically */
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#get-in-touch:hover {
+    background-color: #660000; /* Darker shade of Maroon for hover effect */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #4d0000; /* Dark Maroon */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 5px 0;
+    color: #ffdab9; /* Peach color for footer text */
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 768px) {
+    .service-images {
+        flex-direction: column; /* Stacks the images vertically */
+        align-items: center;
+    }
+
+    .image-card {
+        width: 80%; /* Makes images wider on mobile */
+    }
+
+    #get-in-touch {
+        width: 300px; /* Adjusted button width on smaller screens */
+        height: 70px; /* Adjusted button height on smaller screens */
+    }
+}

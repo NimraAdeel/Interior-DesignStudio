@@ -1,0 +1,223 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    background-color: #fdf5f5; /* Light pinkish background */
+    color: #2c2c2c; /* Dark gray for text */
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #800000; /* Maroon */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+}
+
+header .logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ffcccb; /* Soft pinkish text */
+}
+
+header .nav-links {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+header .nav-links a {
+    color: #ffe4e1; /* Light pink */
+    font-size: 1rem;
+    font-weight: 400;
+    transition: color 0.3s;
+}
+
+header .nav-links a:hover {
+    color: #ffdab9; /* Peach */
+}
+
+header .title {
+    margin-top: 80px;
+}
+
+header .title h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+header .title p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+/* About Section */
+.about {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.about img {
+    max-width: 50%; /* Adjusted size */
+    border-radius: 10px;
+}
+
+.about p {
+    max-width: 600px;
+    text-align: center;
+    font-size: 1.1rem; /* Increased size */
+    line-height: 1.6;
+    color: #4d0000; /* Dark maroon */
+}
+
+/* Services Section */
+.services {
+    padding: 50px 20px;
+    background-color: #f8ebeb; /* Soft blush */
+    text-align: center;
+}
+
+.services h2 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #800000; /* Maroon */
+}
+
+.services .service-cards {
+    display: flex;
+    flex-wrap: wrap; /* Allow images to wrap into rows */
+    gap: 20px; /* Space between cards */
+    justify-content: center; /* Center align the images */
+}
+
+.services .card {
+    width: calc(45% - 10px); /* Each card takes up 45% of the row with spacing */
+    max-width: 200px; /* Maximum width for the card */
+    background-color: #ffe4e1; /* Light pink */
+    border: 1px solid #800000; /* Maroon border */
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(128, 0, 0, 0.2); /* Maroon shadow */
+}
+
+.services .card img {
+    width: 100%; /* Ensure images fit within the card */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px;
+}
+
+.services button {
+    margin-top: 30px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #800000; /* Maroon */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.services button:hover {
+    background-color: #660000; /* Darker maroon */
+}
+
+/* Contact Section */
+.contact {
+    padding: 50px 20px;
+    background-color: #fdf5f5; /* Light pinkish background */
+    text-align: center;
+}
+
+.contact h2 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #800000; /* Maroon */
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 500px; /* Set a max width for the form */
+    background-color: #ffe4e1; /* Light pink background */
+    border: 1px solid #800000; /* Maroon border */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(128, 0, 0, 0.2); /* Maroon shadow */
+}
+
+.contact form input, .contact form textarea {
+    width: 90%; /* Make input fields wider */
+    padding: 10px; /* Add padding for larger fields */
+    margin-bottom: 15px; /* Space between fields */
+    border: 1px solid #800000; /* Maroon border */
+    border-radius: 5px;
+    font-size: 1.1rem; /* Larger text size */
+}
+
+.contact form textarea {
+    height: 100px; /* Increase the height of the textarea */
+    resize: none; /* Disable resizing for better design */
+}
+
+.contact form button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.1rem; /* Larger button size */
+    background-color: #800000; /* Maroon */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact form button:hover {
+    background-color: #660000; /* Darker maroon */
+}
+
+/* Footer */
+footer {
+    background-color: #4d0000; /* Dark maroon */
+    color: #ffe4e1; /* Light pink */
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Vertical alignment */
+    gap: 10px; /* Space between items */
+    align-items: center; /* Center items horizontally */
+}
+
+footer a {
+    color: #ffcccb; /* Soft pink */
+    text-decoration: none;
+}
